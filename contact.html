@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Demande de devis | Flamme Trans d'Afrique</title>
+  <meta name="description" content="Contactez Flamme Trans d'Afrique et envoyez votre demande de devis détaillée pour vos opérations de transport national, international, transit, groupage, affrètement ou consignation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigation principale">
+        <a href="index.html" class="brand-logo"><img src="assets/logo/logo-flamme-trans.svg" alt="Flamme Trans d'Afrique"></a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li class="nav-dropdown">
+            <a href="services.html" class="nav-link">Nos services <span class="dropdown-caret">▼</span></a>
+            <div class="dropdown-menu">
+              <a href="services.html#transport-national">Transport national</a>
+              <a href="services.html#transport-international">Transport international</a>
+              <a href="services.html#transit">Transit</a>
+              <a href="services.html#groupage">Groupage</a>
+              <a href="services.html#affretement">Affrètement</a>
+              <a href="services.html#consignation">Consignation</a>
+            </div>
+          </li>
+          <li><a href="solutions.html" class="nav-link">Nos solutions</a></li>
+          <li><a href="destinations.html" class="nav-link">Nos destinations</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-cta"><a href="#devis" class="btn btn-primary btn-sm">Demander un devis</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Accueil</a> / <span>Contact & Devis</span></div>
+        <h1>Contactez-nous & Demandez un devis</h1>
+        <p>Transmettez-nous les détails de votre opération de transport, transit, groupage, affrètement ou consignation pour une étude personnalisée.</p>
+      </div>
+    </section>
+
+    <section id="devis" class="section section-light">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="quote-form-card reveal">
+            <span class="eyebrow">Étude commerciale</span>
+            <h2 style="margin-bottom: 8px;">Formulaire de demande de devis</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: 24px;">Les champs marqués d'un astérisque (<span class="required-star">*</span>) sont obligatoires.</p>
+
+            <form id="quoteForm" novalidate>
+              <h3 class="form-section-title">1. Vos coordonnées</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Nom et prénom <span class="required-star">*</span></label>
+                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Ex. : Amadou Diallo" required>
+                  <span class="error-msg">Veuillez indiquer votre nom et prénom.</span>
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Nom de l'entreprise <span class="required-star">*</span></label>
+                  <input type="text" id="companyName" name="companyName" class="form-control" placeholder="Ex. : Société Import-Export" required>
+                  <span class="error-msg">Veuillez indiquer le nom de votre entreprise.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Adresse e-mail <span class="required-star">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="contact@entreprise.com" required>
+                  <span class="error-msg">Veuillez saisir une adresse e-mail valide.</span>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone <span class="required-star">*</span></label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+221 00 000 00 00" required>
+                  <span class="error-msg">Veuillez saisir un numéro de téléphone valide.</span>
+                </div>
+              </div>
+
+              <h3 class="form-section-title">2. Origine & Destination</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="departPays">Pays de départ <span class="required-star">*</span></label>
+                  <input type="text" id="departPays" name="departPays" class="form-control" placeholder="Pays d'expédition" required>
+                  <span class="error-msg">Veuillez indiquer le pays de départ.</span>
+                </div>
+                <div class="form-group">
+                  <label for="departVille">Ville de départ <span class="required-star">*</span></label>
+                  <input type="text" id="departVille" name="departVille" class="form-control" placeholder="Ville ou port de départ" required>
+                  <span class="error-msg">Veuillez indiquer la ville de départ.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="destPays">Pays de destination <span class="required-star">*</span></label>
+                  <input type="text" id="destPays" name="destPays" class="form-control" placeholder="Pays de livraison" required>
+                  <span class="error-msg">Veuillez indiquer le pays de destination.</span>
+                </div>
+                <div class="form-group">
+                  <label for="destVille">Ville de destination <span class="required-star">*</span></label>
+                  <input type="text" id="destVille" name="destVille" class="form-control" placeholder="Ville ou port d'arrivée" required>
+                  <span class="error-msg">Veuillez indiquer la ville de destination.</span>
+                </div>
+              </div>
+
+              <h3 class="form-section-title">3. Détails de la prestation et de la marchandise</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prestation">Type de prestation souhaitée <span class="required-star">*</span></label>
+                  <select id="prestation" name="prestation" class="form-control" required>
+                    <option value="">-- Sélectionnez une prestation --</option>
+                    <option value="Transport national">Transport national</option>
+                    <option value="Transport international">Transport international</option>
+                    <option value="Transit">Transit</option>
+                    <option value="Groupage">Groupage</option>
+                    <option value="Affrètement">Affrètement</option>
+                    <option value="Consignation">Consignation</option>
+                  </select>
+                  <span class="error-msg">Veuillez sélectionner le type de prestation.</span>
+                </div>
+                <div class="form-group">
+                  <label for="transportMode">Mode de transport <span class="required-star">*</span></label>
+                  <select id="transportMode" name="transportMode" class="form-control" required>
+                    <option value="">-- Sélectionnez un mode --</option>
+                    <option value="Transport routier">Transport routier</option>
+                    <option value="Transport maritime">Transport maritime</option>
+                    <option value="Transport aérien">Transport aérien</option>
+                    <option value="Transport multimodal">Transport multimodal</option>
+                    <option value="À définir avec Flamme Trans d'Afrique">À définir avec Flamme Trans d'Afrique</option>
+                  </select>
+                  <span class="error-msg">Veuillez sélectionner un mode de transport.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cargoNature">Nature de la marchandise <span class="required-star">*</span></label>
+                  <input type="text" id="cargoNature" name="cargoNature" class="form-control" placeholder="Ex. : Matériaux, produits manufacturés, denrées..." required>
+                  <span class="error-msg">Veuillez préciser la nature de la marchandise.</span>
+                </div>
+                <div class="form-group">
+                  <label for="shipDate">Date d'expédition souhaitée <span class="required-star">*</span></label>
+                  <input type="date" id="shipDate" name="shipDate" class="form-control" required>
+                  <span class="error-msg">Veuillez indiquer une date d'expédition souhaitée.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="estimatedWeight">Poids estimé <span class="required-star">*</span></label>
+                  <input type="text" id="estimatedWeight" name="estimatedWeight" class="form-control" placeholder="Ex. : 2 500 kg ou 18 tonnes" required>
+                  <span class="error-msg">Veuillez indiquer le poids estimé.</span>
+                </div>
+                <div class="form-group">
+                  <label for="estimatedVolume">Volume estimé <span class="required-star">*</span></label>
+                  <input type="text" id="estimatedVolume" name="estimatedVolume" class="form-control" placeholder="Ex. : 12 m³ ou 1 conteneur 20'" required>
+                  <span class="error-msg">Veuillez indiquer le volume estimé.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message complémentaire</label>
+                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Précisions sur le conditionnement (palettes, cartons, vrac), contraintes particulières ou besoins en transit/consignation..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem;">Envoyer ma demande</button>
+
+              <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="reveal">
+            <div class="contact-sidebar-card">
+              <h3>Coordonnées officielles</h3>
+              <p style="font-size: 0.9rem; color: rgba(255,255,255,0.8); margin-bottom: 18px;">
+                Retrouvez les coordonnées directes de <strong>Flamme Trans d'Afrique</strong> pour vos échanges commerciaux et opérationnels.
+              </p>
+              <ul class="contact-info-list">
+                <li>
+                  <strong>Siège / Agence</strong>
+                  <span>[Adresse physique officielle à compléter]</span>
+                </li>
+                <li>
+                  <strong>Téléphone</strong>
+                  <span>[Numéro de téléphone officiel à compléter]</span>
+                </li>
+                <li>
+                  <strong>WhatsApp Professionnel</strong>
+                  <span>[Numéro WhatsApp à activer après confirmation]</span>
+                </li>
+                <li>
+                  <strong>Adresse E-mail</strong>
+                  <span>[Adresse e-mail officielle à compléter]</span>
+                </li>
+                <li>
+                  <strong>Horaires d'ouverture</strong>
+                  <span>[Horaires officiels à compléter]</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-card" style="padding: 26px;">
+              <h4 style="margin-bottom: 10px;">Localisation</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 14px;">
+                L'intégration de la carte interactive (Google Maps / OpenStreetMap) sera activée dès confirmation de l'adresse exacte du siège de l'entreprise.
+              </p>
+              <div style="background-color: var(--color-bg-light); border: 1px dashed var(--color-border); border-radius: var(--radius-sm); padding: 36px 20px; text-align: center; color: var(--color-text-muted); font-size: 0.86rem;">
+                Emplacement réservé à la carte de localisation officielle
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="mentions-legales" class="section" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="container">
+        <div class="notice-box" style="background-color: var(--color-bg-light); border-color: var(--color-border); color: var(--color-text);">
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Mentions légales</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+            Éditeur du site : <strong>Flamme Trans d'Afrique</strong> — Forme juridique, numéro d'immatriculation, siège social, représentant légal et coordonnées d'hébergement à renseigner avant la mise en production officielle du domaine <code>www.flammetrans.com</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo-wrap"><img src="assets/logo/logo-flamme-trans.svg" alt="Flamme Trans d'Afrique"></div>
+          <p style="font-size: 0.92rem;">Transport national et international, transit, groupage, affrètement et consignation.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="solutions.html">Nos solutions</a></li>
+            <li><a href="destinations.html">Nos destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#transport-national">Transport national</a></li>
+            <li><a href="services.html#transport-international">Transport international</a></li>
+            <li><a href="services.html#transit">Transit</a></li>
+            <li><a href="services.html#groupage">Groupage</a></li>
+            <li><a href="services.html#affretement">Affrètement</a></li>
+            <li><a href="services.html#consignation">Consignation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Coordonnées</h4>
+          <ul class="footer-links">
+            <li><strong>Adresse :</strong> [À compléter par l'entreprise]</li>
+            <li><strong>Téléphone :</strong> [À compléter par l'entreprise]</li>
+            <li><strong>E-mail :</strong> [À compléter par l'entreprise]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Flamme Trans d'Afrique. Tous droits réservés.</div>
+        <div class="footer-legal-links"><a href="#mentions-legales">Mentions légales</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="Logo Flamme Trans d'Afrique">
+  <defs>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C62828"/>
+      <stop offset="65%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#F28C28"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142B45"/>
+      <stop offset="100%" stop-color="#1E3F66"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="56" height="56" rx="12" fill="url(#navyGrad)"/>
+  <path d="M12 52 H52" stroke="#F28C28" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M16 57 H48" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M33 14 C33 14 45 25 45 36 C45 43.5 39.5 48 32 48 C24.5 48 19 43 19 36 C19 31 22 26.5 25 24 C24.5 28 26.5 30.5 29 30.5 C27 25 30 18 33 14 Z" fill="url(#flameGrad)"/>
+  <path d="M32 29 C32 29 37 34 37 39 C37 42.5 34.8 45 32 45 C29.2 45 27 42.5 27 39 C27 36 29.5 32 32 29 Z" fill="#FFFFFF" opacity="0.9"/>
+  <text x="72" y="34" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="800" font-size="21" fill="#142B45" letter-spacing="0.5">FLAMME TRANS</text>
+  <text x="73" y="54" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="700" font-size="13.5" fill="#C62828" letter-spacing="3.2">D'AFRIQUE</text>
+</svg>
